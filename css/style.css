@@ -1,0 +1,322 @@
+/* font import */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,300;0,600;0,700;1,200;1,300;1,600;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+:root {
+    --white: #fff;
+    --victory-blue: #00529f;
+    --lucky-orange: #ff7700;
+}
+
+body {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Kanit, system-ui;
+}
+
+
+/* Some default stylings */
+.lucky-orange {
+    color: var(--lucky-orange);
+    /* color: #ee324e; */
+}
+
+p,
+a {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+
+    padding: 1rem 2rem;
+    color: var(--white);
+    cursor: pointer;
+    font-size: 2rem;
+    outline: none;
+    border: none;
+}
+
+h1 {
+    font-size: 3.6rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    background: var(--lucky-orange);
+    color: var(--white);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 2rem;
+    outline: none;
+    border: none;
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 50rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#home-section {
+    /* text-align: center; */
+    padding: 3rem;
+    height: 90vh;
+    background-color: #00529f;
+    position: relative;
+}
+
+#home-section-text {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30vh;
+}
+
+#home-section-text span {
+    font-size: 3.6rem;
+}
+
+#home-section-text h1 {
+    line-height: 3.5rem;
+    color: var(--white);
+    text-shadow: 0px 0px 10px black;
+}
+
+/* home section nav */
+nav {
+    background-color: var(--lucky-orange);
+    bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    margin-right: 1rem;
+}
+
+/* social links */
+.social-links {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.social-links span {
+    display: none;
+}
+
+.social-links i {
+    font-size: 3rem;
+    color: var(--white);
+}
+
+
+/* ######################################### */
+/* ############# About section ############# */
+/* ######################################### */
+
+#about-section {
+    height: 80vh;
+}
+
+#about-section img {
+    /* width: 80%; */
+    height: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+#about-section-text {
+    width: 80%;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about-section-text h1 {
+    line-height: 3rem;
+}
+
+#about-section i {
+    color: var(--victory-blue);
+}
+
+article {
+    background: #fffaf1;
+    padding: 2rem;
+}
+
+
+
+article p {
+    text-align: justify;
+}
+
+/* ######################################### */
+/* ############ Contact section ############ */
+/* ######################################### */
+main {
+    background: var(--victory-blue);
+}
+
+#form-section {
+    width: 90%;
+    max-width: 700px;
+    margin: 2rem auto;
+    display: flex;
+    padding: 4rem 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 2rem;
+    color: var(--lucky-orange);
+    font-weight: 600;
+}
+
+.form-group input {
+    height: 4rem;
+    /* border: 1px solid  */
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    padding: .5rem 1rem;
+}
+
+
+.form-group textarea {
+    border: 1px solid var(--victory-blue);
+    height: 15rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border: 1px solid var(--lucky-orange);
+    outline: none;
+}
+
+
+
+
+
+
+
+/* ######################################### */
+/* ######################################### */
+/* ############# MEDIA QUERY ############### */
+/* ######################################### */
+/* ######################################### */
+
+
+@media(min-width:501px) {
+
+    p,
+    a,
+    label,
+    button {
+        font-size: 2.8rem;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    #home-section-text span {
+        font-size: 5rem;
+    }
+
+    #home-section-text h1 {
+        line-height: 4.5rem;
+
+    }
+
+    .social-links i {
+        font-size: 5rem;
+        color: var(--white);
+    }
+
+    /* .social-links span {
+        display: block;
+        font-size: 2rem;
+    } */
+
+    /* about section */
+    #about-section img {
+        height: 70%;
+    }
+
+    /* contact section */
+
+
+}
+
+@media(min-width:992px) {
+
+    nav {
+        position: sticky;
+        top: 0;
+    }
+
+    h1 {
+        font-size: 6rem;
+    }
+
+    #home-section-text span {
+        font-size: 5rem;
+    }
+
+    /* about section */
+    #about-section {
+        display: flex;
+        align-items: center;
+    }
+
+    #about-section img {
+        height: 70vh;
+    }
+
+    #about-section #about-social-section {
+        padding: 2rem;
+    }
+
+    #about-section-text h1 {
+        line-height: 5rem;
+    }
+
+
+}

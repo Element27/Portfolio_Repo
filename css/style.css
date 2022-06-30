@@ -12,6 +12,8 @@
     --white: #fff;
     --victory-blue: #00529f;
     --lucky-orange: #ff7700;
+    --offwhite: #fffaf1;
+
 }
 
 body {
@@ -165,31 +167,80 @@ nav a {
 }
 
 article {
-    background: #fffaf1;
+    background: var(--offwhite);
     padding: 2rem;
 }
 
-
+article a {
+    color: var(--victory-blue);
+}
 
 article p {
     text-align: justify;
 }
 
 /* ######################################### */
+/* ############# Work section ############## */
+/* ######################################### */
+
+#work-section .work-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin-bottom: 4rem;
+
+}
+
+#work-section h2 {
+    margin: 2.8rem;
+}
+
+#work-section .work-group h3 {
+    font-size: 3rem;
+    text-shadow: 0px 0px 10px #121212;
+    color: var(--lucky-orange);
+}
+
+#work-section .work-group p {
+    text-align: justify;
+    font-weight: 300;
+}
+
+#work-section .work-group a {
+    text-align: justify;
+    font-weight: 300;
+    color: var(--offwhite);
+}
+
+
+
+/* ######################################### */
 /* ############ Contact section ############ */
 /* ######################################### */
 main {
     background: var(--victory-blue);
+    padding-bottom: 5rem;
 }
 
 #form-section {
     width: 90%;
     max-width: 700px;
     margin: 2rem auto;
-    display: flex;
+    /* display: flex; */
     padding: 4rem 1.5rem;
     align-items: center;
     justify-content: center;
+}
+
+#form-section h2,
+#work-section h2 {
+    color: var(--lucky-orange);
+    text-shadow: 0px 0px 10px #121212;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 4rem;
 }
 
 form {
@@ -297,7 +348,7 @@ form {
     }
 
     #home-section-text span {
-        font-size: 5rem;
+        font-size: 6rem;
     }
 
     /* about section */

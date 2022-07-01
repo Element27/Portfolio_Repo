@@ -15,6 +15,7 @@
     --offwhite: #fffaf1;
     --light-blue: #ccdceb;
     --black: #121212;
+    --alt-link: #febe10;
 
 }
 
@@ -123,6 +124,11 @@ nav a {
     margin-right: 1rem;
 }
 
+nav a:hover {
+    /* filter: brightness(0); */
+    filter: invert(75%);
+}
+
 /* social links */
 .social-links {
     width: 80%;
@@ -174,6 +180,10 @@ nav a {
     color: var(--victory-blue);
 }
 
+i:hover {
+    filter: opacity(.8);
+}
+
 article {
     background: var(--offwhite);
     padding: 2rem;
@@ -191,6 +201,11 @@ article a {
     max-width: 25rem;
     text-align: center;
 
+}
+
+article a:hover {
+    background: var(--victory-blue);
+    color: var(--offwhite);
 }
 
 article p {
@@ -240,7 +255,14 @@ article p {
 #work-section .work-group a {
     text-align: justify;
     font-weight: 300;
-    color: var(--light-blue);
+    color: var(--alt-link);
+}
+
+#work-section .work-group a:hover {
+    background-color: var(--alt-link);
+    color: var(--black);
+    padding: 0 auto;
+    border-radius: 5rem;
 }
 
 

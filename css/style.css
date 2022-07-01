@@ -13,6 +13,8 @@
     --victory-blue: #00529f;
     --lucky-orange: #ff7700;
     --offwhite: #fffaf1;
+    --light-blue: #ccdceb;
+    --black: #121212;
 
 }
 
@@ -41,9 +43,10 @@ a {
     text-decoration: none;
 
     padding: 1rem 2rem;
-    color: var(--white);
+    color: var(--black);
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 1rem;
+    font-weight: 600;
     outline: none;
     border: none;
 }
@@ -61,10 +64,11 @@ h2 {
 .btn {
     padding: 1rem 2rem;
     background: var(--lucky-orange);
-    color: var(--white);
+    color: var(--black);
+    font-weight: 600;
     border-radius: 10px;
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 1.6rem;
     outline: none;
     border: none;
     margin-top: 1rem;
@@ -98,7 +102,11 @@ h2 {
 #home-section-text h1 {
     line-height: 3.5rem;
     color: var(--white);
-    text-shadow: 0px 0px 10px black;
+    text-shadow: 0px 0px 10px var(--black);
+}
+
+#home-section-text p {
+    color: var(--light-blue);
 }
 
 /* home section nav */
@@ -226,12 +234,13 @@ article p {
 #work-section .work-group p {
     text-align: justify;
     font-weight: 300;
+    color: var(--offwhite);
 }
 
 #work-section .work-group a {
     text-align: justify;
     font-weight: 300;
-    color: var(--offwhite);
+    color: var(--light-blue);
 }
 
 
@@ -257,7 +266,7 @@ main {
 #form-section h2,
 #work-section h2 {
     color: var(--lucky-orange);
-    text-shadow: 0px 0px 10px #121212;
+    text-shadow: 0px 0px 10px var(--black);
     text-align: center;
     margin-bottom: 1rem;
     font-size: 4rem;
@@ -276,6 +285,8 @@ form {
     font-size: 2rem;
     color: var(--lucky-orange);
     font-weight: 600;
+    text-shadow: 0px 0px 10px var(--black);
+
 }
 
 .form-group input {

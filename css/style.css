@@ -173,10 +173,21 @@ article {
 
 article a {
     color: var(--victory-blue);
+    font-weight: 600;
+    background: var(--white);
+    padding: 10px 20px;
+    border: .2rem solid var(--victory-blue);
+    border-radius: 1.5rem;
+    display: block;
+    margin: 1.5rem auto;
+    max-width: 25rem;
+    text-align: center;
+
 }
 
 article p {
     text-align: justify;
+    margin-bottom: 1rem;
 }
 
 /* ######################################### */

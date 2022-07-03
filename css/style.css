@@ -80,6 +80,9 @@ h2 {
     margin-right: auto;
 }
 
+.btn:hover {
+    filter: invert(75%);
+}
 
 #home-section {
     /* text-align: center; */

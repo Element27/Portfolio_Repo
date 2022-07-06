@@ -129,7 +129,7 @@ nav a {
 
 nav a:hover {
     /* filter: brightness(0); */
-    filter: invert(75%);
+    color: var(--light-blue);
 }
 
 /* social links */
@@ -161,6 +161,8 @@ nav a:hover {
     height: 80vh;
 }
 
+
+
 #about-section img {
     /* width: 80%; */
     height: 50%;
@@ -183,8 +185,8 @@ nav a:hover {
     color: var(--victory-blue);
 }
 
-i:hover {
-    filter: opacity(.8);
+#about-section i:hover {
+    color: var(--lucky-orange);
 }
 
 article {

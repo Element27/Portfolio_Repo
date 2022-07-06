@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+
+:root {
+    --white: #fff;
+    --lucky-orange: #ff7700;
+    --light-blue: #ccdceb;
+}
+
+.animate-text,
+.animate-text2,
+.animate-text3 {
+    position: relative;
+    color: transparent;
+    /* -webkit-text-stroke: .25px #ccdceb; */
+    line-height: 5rem;
+    /* border: 1px solid red; */
+    /* text-align: center; */
+}
+
+.animate-text::before {
+    content: attr(data-text);
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    color: var(--lucky-orange);
+    /* -webkit-text-stroke: var(--lucky-orange) 1px; */
+    /* border-bottom: 1px solid var(--light-blue); */
+    overflow: hidden;
+    animation: write-text 2s ease-in forwards;
+}
+
+.animate-text2::before {
+    content: attr(data-text);
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    color: var(--white);
+    -webkit-text-stroke: var(--white) 1px;
+    /* border-bottom: 1px solid var(--light-blue); */
+    overflow: hidden;
+    animation: write-text 2s 2s linear forwards;
+}
+
+.animate-text3::before {
+    content: attr(data-text);
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    color: var(--white);
+    -webkit-text-stroke: var(--white) 1px;
+    /* border-bottom: 1px solid var(--light-blue); */
+    overflow: hidden;
+    animation: write-text 1.5s 4s ease-out forwards;
+}
+
+@keyframes write-text {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
